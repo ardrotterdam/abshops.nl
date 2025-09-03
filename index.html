@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABshops - Jouw Complete E-commerce Partner | Shopify, SEO & Online Marketing</title>
+    <meta name="description" content="Full-service e-commerce bureau in Rotterdam. Shopify specialist, SEO optimalisatie, lead generation en doorlopende support. Van webshop tot klanten - alles onder één dak.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #323130;
+            background: #f3f2f1;
+            min-height: 100vh;
+        }
+        
+        /* Microsoft Style Navigation Bar */
+        .nav-bar {
+            background: #0078d4;
+            padding: 0;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(0deg, #0078d4 0%, #40a9ff 100%);
+            color: white;
+            padding: 80px 32px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 46px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+        
+        .hero .subtitle {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 32px;
+            opacity: 0.95;
+        }
+        
+        .hero-description {
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.95;
+        }
+        
+        /* Microsoft Style Button */
+        .button-primary {
+            display: inline-block;
+            background: white;
+            color: #0078d4;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid transparent;
+            transition: all 0.1s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .button-primary:hover {
+            background: #f3f2f1;
+            transform: translateY(-1px);
+        }
+        
+        .button-primary:active {
+            transform: translateY(0);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 64px 32px;
+        }
+        
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .section-header h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #323130;
+            margin-bottom: 16px;
+        }
+        
+        .section-header p {
+            font-size: 16px;
+            color: #605e5c;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Service Cards - Microsoft Style */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            margin-bottom: 64px;
+        }
+        
+        .service-card {
+            background: white;
+            border: 1px solid #edebe9;
+            padding: 32px;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+        
+        .service-card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        
+        .service-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        
+        .service-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #323130;
+            margin-bottom: 12px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .service-card li {
+            padding: 8px 0;
+            font-size: 14px;
+            color: #605e5c;
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-card li:before {
+            content: "✓";
+            color: #0078d4;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 16px;
+        }
+        
+        /* Projects Section */
+        .projects-section {
+            background: white;
+            padding: 64px 0;
+            border-top: 1px solid #edebe9;
+            border-bottom: 1px solid #edebe9;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+        
+        .project-card {
+            background: #faf9f8;
+            border: 1px solid #edebe9;
+            padding: 32px;
+            transition: all 0.2s ease;
+        }
+        
+        .project-card:hover {
+            background: white;
+            border-color: #0078d4;
+            box-shadow: 0 4px 12px rgba(0,120,212,0.1);
+        }
+        
+        .project-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0078d4;
+            margin-bottom: 12px;
+        }
+        
+        .project-card p {
+            font-size: 14px;
+            color: #605e5c;
+            line-height: 20px;
+        }
+        
+        /* Features List */
+        .features-section {
+            padding: 64px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .feature-item {
+            text-align: center;
+        }
+        
+        .feature-number {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            background: #0078d4;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .feature-item h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #323130;
+            margin-bottom: 8px;
+        }
+        
+        .feature-item p {
+            font-size: 14px;
+            color: #605e5c;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: #0078d4;
+            color: white;
+            padding: 64px 32px;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-section h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .cta-section p {
+            font-size: 16px;
+            margin-bottom: 32px;
+            opacity: 0.95;
+        }
+        
+        .button-white {
+            display: inline-block;
+            background: white;
+            color: #0078d4;
+            padding: 12px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid white;
+            transition: all 0.2s ease;
+        }
+        
+        .button-white:hover {
+            background: transparent;
+            color: white;
+        }
+        
+        /* Footer */
+        footer {
+            background: #323130;
+            color: white;
+            padding: 48px 32px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .footer-info {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 24px;
+        }
+        
+        .footer-contact {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .footer-contact a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero .subtitle {
+                font-size: 18px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .examples-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="/" class="logo">ABshops</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Jouw Complete E-commerce Partner</h1>
+            <p class="subtitle">Van webshop tot klanten - alles onder één dak</p>
+            <p class="hero-description">
+                Wij zijn jouw strategische partner in de digitale wereld. Van het bouwen van professionele webshops tot het genereren van klanten - wij regelen het complete traject met expertise in techniek, marketing én coaching.
+            </p>
+            <a href="#contact" class="button-primary">Start Vandaag</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <div class="container">
+        <div class="section-header">
+            <h2>Onze Diensten</h2>
+            <p>Complete e-commerce oplossingen voor groeiende ondernemingen</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🛍️</div>
+                <h3>Webshop Development</h3>
+                <ul>
+                    <li>Shopify specialist</li>
+                    <li>Professionele webshops</li>
+                    <li>Technische probleem oplossing</li>
+                    <li>Conversie optimalisatie</li>
+                    <li>Payment & shipping setup</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3>Online Marketing</h3>
+                <ul>
+                    <li>SEO optimalisatie</li>
+                    <li>Lead generation strategieën</li>
+                    <li>Social media marketing</li>
+                    <li>Content creatie & blogging</li>
+                    <li>Google Ads & Facebook Ads</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Doorlopende Support</h3>
+                <ul>
+                    <li>E-commerce coaching</li>
+                    <li>Maandelijkse begeleiding</li>
+                    <li>Groei strategieën</li>
+                    <li>Training & workshops</li>
+                    <li>24/7 technische support</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="section-header">
+            <h2>Onze Projecten</h2>
+            <p>Bekijk onze portfolio van succesvolle e-commerce oplossingen</p>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>ABshops.nl</h4>
+                <p>Ons hoofdplatform voor e-commerce oplossingen en diensten. Complete begeleiding van A tot Z voor ondernemers die online willen groeien.</p>
+            </div>
+            
+            <div class="project-card">
+                <h4>Tweede Website</h4>
+                <p>Gespecialiseerd in lead generation en conversie optimalisatie voor groeiende ondernemingen. Focus op meetbare resultaten.</p>
+            </div>
+            
+            <div class="project-card">
+                <h4>Derde Website</h4>
+                <p>SEO diensten en content marketing strategieën voor duurzame online groei. Organisch verkeer en hogere rankings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section container">
+        <div class="section-header">
+            <h2>Waarom ABshops?</h2>
+            <p>Jouw succes is onze missie</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-number">1</div>
+                <h4>Ervaring</h4>
+                <p>Jarenlange expertise in e-commerce en digitale marketing</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-number">2</div>
+                <h4>AI-Technologie</h4>
+                <p>Gebruik van de nieuwste AI-tools voor optimale resultaten</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-number">3</div>
+                <h4>Maatwerk</h4>
+                <p>Oplossingen op maat voor jouw specifieke business</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-number">4</div>
+                <h4>Support</h4>
+                <p>Altijd bereikbaar voor vragen en ondersteuning</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Klaar om te groeien?</h2>
+            <p>Ontdek hoe wij jouw online succes kunnen versnellen. Van een professionele webshop tot een constante stroom van nieuwe klanten - wij maken het mogelijk.</p>
+            <a href="#contact" class="button-white">Neem Contact Op</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">ABshops</div>
+            <p class="footer-info">
+                Full-Service E-commerce Bureau<br>
+                Wij combineren jarenlange ervaring met de nieuwste AI-technologie
+            </p>
+            <div class="footer-contact">
+                📍 Weena 70, Rotterdam | 
+                ✉️ <a href="mailto:info@abshops.nl">info@abshops.nl</a> | 
+                ☎️ 010-XXX XXXX
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
